@@ -1,10 +1,13 @@
 import logo from './profiledrawing-512px.png';
 import './App.css';
+import { ReactP5Wrapper } from "react-p5-wrapper";
+import sketch from './Sketch.js'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <p>
           Innovating the User Experience
         </p>
@@ -18,8 +21,10 @@ function App() {
         >
           Learn React
         </a>
-
-      </header>
+      </div>
+      <div className="Sketch">
+        <ReactP5Wrapper sketch={sketch} />
+      </div>
     </div>
   );
 }

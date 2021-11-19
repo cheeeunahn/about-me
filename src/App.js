@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './profiledrawing-512px.png';
 import './App.css';
 
 function App() {
@@ -6,8 +6,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Innovating the User Experience
         </p>
+        <img className= "App-logo" src={logo} alt="Logo" />
+
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -16,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+
       </header>
     </div>
   );

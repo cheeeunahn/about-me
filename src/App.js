@@ -4,6 +4,7 @@ import { ReactP5Wrapper } from "react-p5-wrapper";
 import Sketch from './sketches/Sketch.js'
 import Header from './components/Header.js'
 
+// To insert icons, please look here https://react-icons.github.io/react-icons
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       <Header />
       <div className="App-content">
         <p>
-          Innovating the User Experience
+          Innovating the <br/>
+          User Experience
         </p>
         <img className= "App-logo" src={logo} alt="Logo" />
       </div>

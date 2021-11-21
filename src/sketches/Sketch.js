@@ -10,15 +10,17 @@ export default function sketch (p) {
       constructor(){
         this.x = p.random(0,p.width);
         this.y = p.random(0,p.height);
-        this.r = p.random(1,8);
+        this.r = p.random(1,7);
         this.xSpeed = p.random(-2,2);
         this.ySpeed = p.random(-1,1.5);
       }
     
     // creation of a particle.
       createParticle() {
-        p.noStroke();
-        p.fill('rgba(200,169,169,0.5)');
+        //p.noStroke();
+        p.stroke('rgba(211,243,255,0.7)');
+        p.strokeWeight(p.random(0,3));
+        p.fill('rgba(211,243,255,0.3)');
         p.circle(this.x,this.y,this.r);
       }
     
@@ -37,8 +39,9 @@ export default function sketch (p) {
         joinParticles(particles) {
             particles.forEach(element =>{
             let dis = p.dist(this.x,this.y,element.x,element.y);
-            if(dis<85) {
-                p.stroke('rgba(255,255,255,0.5)');
+            if(dis<70) {
+                p.strokeWeight(1);
+                p.stroke('rgba(211,243,255,0.2)');
                 p.line(this.x,this.y,element.x,element.y);
             }
             });
@@ -51,7 +54,7 @@ export default function sketch (p) {
         p.createCanvas(p.windowWidth, p.windowHeight);
         for(let i = 0;i<p.width/10;i++){
             particles.push(new Particle());
-          }
+        }
     };
       
     /*
@@ -85,7 +88,7 @@ export default function sketch (p) {
             particles[i].createParticle();
             particles[i].moveParticle();
             particles[i].joinParticles(particles.slice(i));
-          }
+        }
         // for (let i = 0; i < circles.length; i++) {
         //     circles[i].move();
         //     circles[i].display();

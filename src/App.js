@@ -12,8 +12,11 @@ const App = () => {
       <Header />
       <div className="App-content">
         {/* <img className= "App-logo" src={logo} alt="Logo" /> */}
-        <p>
+        <p style={{fontWeight: 900}}>
           Innovating the User Experience
+        </p>
+        <p style={{fontWeight: 100}}>
+          UX Research | UX Design | Interaction Design
         </p>
       </div>
       <div className="Sketch">

@@ -8,6 +8,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: white;
+  font-weight: 600;
+  color: black;
+}
+
 /*code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

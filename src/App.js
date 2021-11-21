@@ -11,11 +11,10 @@ const App = () => {
     <div className="App">
       <Header />
       <div className="App-content">
+        {/* <img className= "App-logo" src={logo} alt="Logo" /> */}
         <p>
-          Innovating the <br/>
-          User Experience
+          Innovating the User Experience
         </p>
-        <img className= "App-logo" src={logo} alt="Logo" />
       </div>
       <div className="Sketch">
         <ReactP5Wrapper sketch={Sketch} />

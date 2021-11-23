@@ -1,5 +1,7 @@
 .App {
   animation: fadeInAnimation ease 5s;
+  background-color: black;
+  color: white;
   /*text-align: center;*/
 }
 
@@ -10,15 +12,38 @@
 }
 
 .App-content {
-  background-color: black;
-  height: 90vh;
+  z-index: 5;
+  height: 80vh;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(8px + 2vmin);
-  color: white;
+}
+
+.Sketch {
+  z-index: 1;
+  top: 0;
+  position: absolute;
+}
+
+
+.Title {
+  font-weight: 900;
+  font-size: calc(15px + 4vmin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+p {
+  padding: 1vh 15vw 0 15vw;
+  font-weight: 300;
+  font-size: calc(2px + 1.9vmin);
+  text-align: center;
+  line-height: 150%;
 }
 
 

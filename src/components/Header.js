@@ -9,10 +9,10 @@ const Header = () => {
                     About
                 </a>
                 <a className = 'Navigation-item' href={"./#"}>
-                    Projects
+                    Works
                 </a>
                 <a className = 'Navigation-item' href={"./#"}>
-                    Hobbies
+                    Contact
                 </a>
             </div>
             <div className = 'Name'>

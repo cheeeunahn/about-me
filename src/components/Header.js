@@ -14,6 +14,8 @@ const Header = () => {
                 <a className = 'Navigation-item' href={"./#"}>
                     Contact
                 </a>
+                <a href="/files/2021.12_CV.pdf" download="CheeEunAhn_CV">
+                </a>
             </div>
             <div className = 'Name'>
                 <h1 style ={{fontWeight: 700}}>Chee Eun Ahn</h1>

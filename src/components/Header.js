@@ -14,7 +14,8 @@ const Header = () => {
                 <a className = 'Navigation-item' href={"./#"}>
                     Contact
                 </a>
-                <a href="/files/2021.12_CV.pdf" download="CheeEunAhn_CV">
+                <a className = 'Navigation-item' href={"./files/2021.12_CV.pdf"} download={"CheeEunAhn.pdf"}>
+                    Download CV
                 </a>
             </div>
             <div className = 'Name'>

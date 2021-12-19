@@ -17,12 +17,11 @@ const App = () => {
         <div className="Title">
           Innovating the User Experience
         </div>
-        <div>
-          <p>
-            Hi, my name is Chee Eun.
-            I am a <b style={{color: '#89ecda'}}>UX RESEARCHER, UX DESIGNER, AND INTERACTION DESIGNER</b> currently residing in Seoul, South Korea.
-            I am also interested in front-end web development and media art.
-          </p>
+        <div className="Description">
+            <p>
+              Hi, I am a <b style={{color: '#89ecda'}}>UX RESEARCHER, UX DESIGNER, AND INTERACTION DESIGNER</b> currently residing in Seoul, South Korea. <br/>
+              I am also interested in front-end web development and media art.
+            </p>
         </div>
       </div>
 

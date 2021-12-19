@@ -2,7 +2,17 @@ footer {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    text-align: center;
     font-size: calc(1px + 1.2vh);
     font-weight: 300;
     height: 10vh;
+    z-index: 1000;
+}
+
+p {
+    line-height: 200%;
+}
+
+a {
+    text-decoration: underline;
 }

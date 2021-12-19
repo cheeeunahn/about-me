@@ -5,11 +5,9 @@
   /*text-align: center;*/
 }
 
-.App-logo {
+/* .App-logo {
   height: 35vmin;
-  /*animation: fadeInAnimation ease 5s;*/
-  /*pointer-events: none;*/
-}
+} */
 
 .App-content {
   z-index: 5;
@@ -23,7 +21,7 @@
 }
 
 .Sketch {
-  z-index: 1;
+  z-index: 0;
   top: 0;
   position: absolute;
 }
@@ -38,12 +36,19 @@
   text-align: center;
 }
 
-p {
+.Description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1vh 15vw 0 15vw;
   font-weight: 300;
   font-size: calc(2px + 1.9vmin);
   text-align: center;
   line-height: 150%;
+}
+
+p {
+  z-index: 100;
 }
 
 

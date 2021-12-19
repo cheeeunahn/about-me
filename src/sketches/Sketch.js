@@ -2,16 +2,17 @@ export default function sketch (p) {
 
     // Particle example from https://p5js.org/examples/simulate-particles.html
     // this class describes the properties of a single particle.
+
     class Particle {
     // setting the co-ordinates, radius and the
     // speed of a particle in both the co-ordinates axes.
       constructor(){
         this.x = p.random(0,p.windowWidth);
         this.y = p.random(0,p.windowHeight);
-        this.r = p.random(1,7);
+        this.r = p.random(1,5);
 
-        this.xSpeed = p.random(-3,3);
-        this.ySpeed = p.random(-1,1.5);
+        this.xSpeed = p.random(-2,2);
+        this.ySpeed = p.random(-2,2);
       }
     
     // creation of a particle.
@@ -52,7 +53,7 @@ export default function sketch (p) {
 
     p.setup = function () {
         p.createCanvas(p.windowWidth, p.windowHeight);
-        for(let i = 0;i< p.windowHeight/30;i++){
+        for(let i = 0;i< p.windowHeight/20;i++){
             particles.push(new Particle());
         }
     };

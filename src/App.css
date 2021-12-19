@@ -1,6 +1,6 @@
 .App {
   animation: fadeInAnimation ease 5s;
-  background-color: black;
+  background-color: #0e1111;
   color: white;
   /*text-align: center;*/
 }
@@ -10,8 +10,8 @@
 } */
 
 .App-content {
-  z-index: 5;
-  height: 80vh;
+  z-index: 10;
+  height: 90vh;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,7 @@
   font-weight: 900;
   font-size: calc(15px + 4vmin);
   display: flex;
+  padding: 3vh 0 0 0;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -40,7 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1vh 15vw 0 15vw;
+  padding: 0vh 20vw 0 20vw;
   font-weight: 300;
   font-size: calc(2px + 1.9vmin);
   text-align: center;
@@ -60,6 +61,29 @@ p {
       opacity: 1;
    }
 }
+
+
+img {
+  animation: slide-up-fade-in ease 3s;
+  animation-iteration-count: 1;
+  transform-origin: 60% 60%;
+  animation-fill-mode:forwards;
+  opacity:0;
+  opacity: 1\9;
+
+}
+
+@keyframes slide-up-fade-in{
+  0% {
+      opacity:0;
+      transform:  translate(0px,60px)  ;
+  }
+  100% {
+      opacity:1;
+      transform:  translate(0px,0px)  ;
+  }
+}
+
 
 /*@media (prefers-reduced-motion: no-preference) {
   .App-logo {

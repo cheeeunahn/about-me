@@ -32,27 +32,27 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-  <script async>
-  (function (m, a, z, e) {
-  var s, t;
-  try {
-    t = m.sessionStorage.getItem('maze-us');
-  } catch (err) {}
-
-  if (!t) {
-    t = new Date().getTime();
-    try {
-      m.sessionStorage.setItem('maze-us', t);
-    } catch (err) {}
-  }
-
-  s = a.createElement('script');
-  s.src = z + '?t=' + t + '&apiKey=' + e;
-  s.async = true;
-  a.getElementsByTagName('head')[0].appendChild(s);
-  m.mazeUniversalSnippetApiKey = e;
-  })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'acfe4b79-753b-4bf6-9d7d-03d2f176dcaa');
-  </script>
     <div id="root"></div>
+    <script>
+    (function (m, a, z, e) {
+    var s, t;
+    try {
+      t = m.sessionStorage.getItem('maze-us');
+    } catch (err) {}
+
+    if (!t) {
+      t = new Date().getTime();
+      try {
+        m.sessionStorage.setItem('maze-us', t);
+      } catch (err) {}
+    }
+
+    s = a.createElement('script');
+    s.src = z + '?t=' + t + '&apiKey=' + e;
+    s.async = true;
+    a.getElementsByTagName('head')[0].appendChild(s);
+    m.mazeUniversalSnippetApiKey = e;
+    })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'acfe4b79-753b-4bf6-9d7d-03d2f176dcaa');
+    </script>
   </body>
 </html>

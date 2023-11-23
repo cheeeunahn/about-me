@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer>
             <p>
-                © Chee Eun Ahn 2021 <br/>
+                © Chee Eun Ahn 2023 <br/>
                 Website created using React.js and p5.js. 
                 You can find the source code <a href={"https://github.com/cheeeunahn/about-me"}>here</a>.
             </p>

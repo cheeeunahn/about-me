@@ -14,20 +14,12 @@ const Header = () => {
                 <Link to ="/about-me" className = 'Navigation-item'>
                     Home
                 </Link>
-                <Link to ="/about" className = 'Navigation-item'>
-                    About
-                </Link>
-            
-                <a className = 'Navigation-item' href={"./#"} onClick={displayMsg}>
+                <Link to ="/works" className = 'Navigation-item'>
                     Works
-                </a>
-                <a className = 'Navigation-item' href={"./#"} onClick={displayMsg}>
-                    Contact
-                </a>
+                </Link>
                 <a className = 'Navigation-item' href={"./files/2021.12_CV.pdf"} download={"CheeEunAhn_CV.pdf"}>
                     Download CV
                 </a>
-
             </div>
             <div className = 'Navigation-item, Name' style = {{fontWeight: 700, textDecoration: 'none'}}>
                 <h1>Chee Eun Ahn</h1>

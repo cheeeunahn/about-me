@@ -1,5 +1,6 @@
 import React from 'react'
-import './Header.css';
+import './NavBar.css'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
 
@@ -10,9 +11,13 @@ const Header = () => {
     return (
         <header className = 'App-header'>
             <div className = 'Navigation-bar'>
-                <a className = 'Navigation-item' href={"./#"} onClick={displayMsg}>
+                <Link to ="/about-me" className = 'Navigation-item'>
+                    Home
+                </Link>
+                <Link to ="/about" className = 'Navigation-item'>
                     About
-                </a>
+                </Link>
+            
                 <a className = 'Navigation-item' href={"./#"} onClick={displayMsg}>
                     Works
                 </a>
@@ -22,9 +27,10 @@ const Header = () => {
                 <a className = 'Navigation-item' href={"./files/2021.12_CV.pdf"} download={"CheeEunAhn_CV.pdf"}>
                     Download CV
                 </a>
+
             </div>
-            <div className = 'Name'>
-                <h1 style ={{fontWeight: 700}}>Chee Eun Ahn</h1>
+            <div className = 'Navigation-item, Name' style = {{fontWeight: 700, textDecoration: 'none'}}>
+                <h1>Chee Eun Ahn</h1>
             </div>
         </header>
     )

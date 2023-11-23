@@ -12,13 +12,19 @@
     font-size: calc(3px + 1.5vmin);
     font-weight: 300;
   }
-  
+
+  .Navigation-item:hover {
+    background-color: #89ecda;
+    color: black;
+  }
+
   .Name {
     justify-content: right;
     align-items: baseline;
+    padding: none;
     font-size: calc(7px + 1vmin);
   }
-  
+
   .App-header {
     padding: 2.5vh 5vw 0 5vw;
     /* background-color: #0e1111; */

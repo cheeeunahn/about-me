@@ -40,5 +40,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://cheeeunahn.github.io/about-me/"
+  "homepage": "https://cheeeunahn.github.io/about-me/",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
 }

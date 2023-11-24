@@ -12,17 +12,17 @@ const Header = () => {
         <header className = 'App-header'>
             <div className = 'Navigation-bar'>
                 <Link to ="/about-me" className = 'Navigation-item'>
-                    Home
+                    <b>Home🏠</b>
                 </Link>
                 <Link to ="/works" className = 'Navigation-item'>
-                    Works
+                    <b>Works📖</b>
                 </Link>
                 <a className = 'Navigation-item' href={"./files/2021.12_CV.pdf"} download={"CheeEunAhn_CV.pdf"}>
-                    Download CV
+                   <b>Download Resume🔗</b>
                 </a>
             </div>
             <div className = 'Navigation-item, Name' style = {{fontWeight: 700, textDecoration: 'none'}}>
-                <h1>Chee Eun Ahn</h1>
+                <h1>Chee Eun Ahn</h1> 
             </div>
         </header>
     )

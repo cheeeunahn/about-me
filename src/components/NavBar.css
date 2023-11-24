@@ -9,7 +9,7 @@
   
   .Navigation-item {
     margin-right: 3.2vw;
-    font-size: calc(3px + 1.5vmin);
+    font-size: calc(2px + 1.8vmin);
     font-weight: 300;
   }
 
@@ -22,7 +22,7 @@
     justify-content: right;
     align-items: baseline;
     padding: none;
-    font-size: calc(7px + 1vmin);
+    font-size: calc(8px + 1.1vmin);
   }
 
   .App-header {

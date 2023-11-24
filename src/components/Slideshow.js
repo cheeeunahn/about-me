@@ -16,7 +16,7 @@ const Slideshow = () => {
     return (
         <Slide className="slide"
             autoplay={true}
-            duration={5000}
+            duration={3000}
             onChange={function noRefCheck(){}}
             onStartChange={function noRefCheck(){}}
             easing="ease"
